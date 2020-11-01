@@ -10,6 +10,8 @@ const heroes = [
 ]
 
 app.get('/', async (req, res) => {
+  const firestore = new Firestore();
+  
   // Obtain a document reference.
   const document = firestore.doc('posts/intro-to-firestore')
 

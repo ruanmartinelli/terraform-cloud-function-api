@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "PROJECT_ID-tfstate"
+    bucket = "crispy-barnacle-tfstate"
     prefix = "env/development"
   }
 }
