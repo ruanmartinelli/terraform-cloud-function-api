@@ -13,6 +13,7 @@ data "archive_file" "source" {
 # Create bucket that will host the source code
 resource "google_storage_bucket" "bucket" {
   name = "${var.project}-function"
+  location = "US-CENTRAL1"
 }
 
 # Add source code zip to bucket
